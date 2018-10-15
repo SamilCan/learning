@@ -19,13 +19,17 @@ from tensorflow.examples.tutorials.mnist import input_data as mnist_data
 print("Tensorflow version " + tf.__version__)
 tf.set_random_seed(0)
 
-# neural network with 1 layer of 10 softmax neurons
+<<<<<<< HEAD
+# neural network with 1 layer of 10 softmax neurons.e
+=======
+# neural network with 1 layer of 10 softmax neurons_a
+>>>>>>> deneme
 #
 # · · · · · · · · · ·       (input data, flattened pixels)       X [batch, 784]        # 784 = 28 * 28
 # \x/x\x/x\x/x\x/x\x/    -- fully connected layer (softmax)      W [784, 10]     b[10]
 #   · · · · · · · ·                                              Y [batch, 10]
 
-# The model is:
+# The model is:_
 #
 # Y = softmax( X * W + b)
 #              X: matrix for 100 grayscale images of 28x28 pixels, flattened (there are 100 images in a mini-batch)
@@ -48,7 +52,7 @@ W = tf.Variable(tf.zeros([784, 10]))
 # biases b[10]
 b = tf.Variable(tf.zeros([10]))
 
-# flatten the images into a single line of pixels
+# flatten the images into a single line of pixels_
 # -1 in the shape definition means "the only possible dimension that will preserve the number of elements"
 XX = tf.reshape(X, [-1, 784])
 
@@ -107,7 +111,7 @@ def training_step(i, update_test_data, update_train_data):
         datavis.update_image2(im)
         print(str(i) + ": ********* epoch " + str(i*100//mnist.train.images.shape[0]+1) + " ********* test accuracy:" + str(a) + " test loss: " + str(c))
 
-    # the backpropagation training step
+    # the backpropagation training step 
     sess.run(train_step, feed_dict={X: batch_X, Y_: batch_Y})
 
 
