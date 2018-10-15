@@ -19,7 +19,7 @@ from tensorflow.examples.tutorials.mnist import input_data as mnist_data
 print("Tensorflow version " + tf.__version__)
 tf.set_random_seed(0)
 
-# neural network with 1 layer of 10 softmax neurons
+# neural network with 1 layer of 10 softmax neurons_a
 #
 # · · · · · · · · · ·       (input data, flattened pixels)       X [batch, 784]        # 784 = 28 * 28
 # \x/x\x/x\x/x\x/x\x/    -- fully connected layer (softmax)      W [784, 10]     b[10]
