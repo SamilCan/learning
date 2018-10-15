@@ -25,7 +25,7 @@ tf.set_random_seed(0)
 # \x/x\x/x\x/x\x/x\x/    -- fully connected layer (softmax)      W [784, 10]     b[10]
 #   · · · · · · · ·                                              Y [batch, 10]
 
-# The model is:
+# The model is:_
 #
 # Y = softmax( X * W + b)
 #              X: matrix for 100 grayscale images of 28x28 pixels, flattened (there are 100 images in a mini-batch)
