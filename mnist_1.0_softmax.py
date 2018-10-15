@@ -20,7 +20,7 @@ print("Tensorflow version " + tf.__version__)
 tf.set_random_seed(0)
 
 <<<<<<< HEAD
-# neural network with 1 layer of 10 softmax neurons.e
+# neural network with 1 layer of 10 softmax neurons.eer
 =======
 # neural network with 1 layer of 10 softmax neurons_a
 >>>>>>> deneme
